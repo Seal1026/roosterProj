@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { savePrompt } from "../utils/promptStorage";
+import { savePrompt } from "./lib/storage/promptStorage";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -27,9 +27,7 @@ export default function Home() {
   const router = useRouter();
 
 
-  // useEffect(() => {
-  //   fetch('/api/initialize-app', { method: 'GET' });
-  // }, []);
+  // Removed commented-out code referencing unused API route
 
 
   // Add animation effect when component mounts

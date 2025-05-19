@@ -4,8 +4,8 @@
 
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import ProcessPromptsPage from '../prompts/process/page';
-import { getPrompts, Prompt } from '../../utils/promptStorage';
+import ProcessPromptsPage from '../../components/prompts/process/page';
+import { getPrompts, Prompt } from '../lib/storage/promptStorage';
 
 // Mock fetch
 global.fetch = jest.fn();

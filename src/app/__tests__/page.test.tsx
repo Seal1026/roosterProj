@@ -5,7 +5,7 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import Home from '../page';
-import { savePrompt } from '../../utils/promptStorage';
+import { savePrompt } from '../lib/storage/promptStorage';
 
 // Mock the router
 jest.mock('next/navigation', () => ({

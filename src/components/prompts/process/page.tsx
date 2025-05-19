@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { getPrompts, Prompt } from "../../../utils/promptStorage";
+import { getPrompts, Prompt } from "../../../app/lib/storage/promptStorage";
 
 export default function ProcessPromptsPage() {
   const [isProcessing, setIsProcessing] = useState(false);

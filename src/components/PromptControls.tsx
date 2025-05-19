@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from 'react';
-import { Prompt, togglePromptActiveStatus } from '@/utils/promptStorage';
-import { processPrompt } from '@/utils/schedulerService';
-import { triggerSchedulerOnStatusChange } from '@/app/scheduler/cronScheduler';
+import { Prompt, togglePromptActiveStatus } from '@/app/lib/storage/promptStorage';
+import { processPrompt } from '@/app/lib/services/schedulerService';
+import { triggerSchedulerOnStatusChange } from '@/app/lib/services/cronJobService';
 
 interface PromptControlsProps {
   prompt: Prompt;

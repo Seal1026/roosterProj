@@ -1,6 +1,6 @@
 "use client";
 
-import { initializeSchedules } from "@/app/scheduler/cronScheduler";
+import { initializeSchedules } from "@/app/lib/services/cronJobService";
 import { useEffect } from "react";
 
 export default function InitializeApp() {

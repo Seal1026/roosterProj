@@ -1,4 +1,5 @@
-import { supabase } from './supabase';
+"use server";
+import { supabase } from '../services/supabase';
 import { Prompt } from './promptStorage';
 import { v4 as uuidv4 } from 'uuid';
 

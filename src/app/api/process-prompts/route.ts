@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { processPromptsOnServer } from '../../../utils/serverActions';
-import { shouldProcessPrompt } from '../../../utils/schedulerService';
-import { getPromptsFromSupabase } from '@/utils/promptStorageSupabase';
+import { processPromptsOnServer } from '../../lib/services/serverActions';
+import { shouldProcessPrompt } from '../../lib/services/schedulerService';
+import { getPromptsFromSupabase } from '@/app/lib/storage/promptStorageSupabase';
 
 /**
  * API route to process scheduled prompts

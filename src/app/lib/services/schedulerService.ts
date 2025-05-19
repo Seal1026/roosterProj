@@ -1,4 +1,5 @@
-import { Prompt, getPrompts, updatePromptLastProcessed } from './promptStorage';
+"use server";
+import { Prompt, getPrompts, updatePromptLastProcessed } from '../storage/promptStorage';
 import { processPromptsOnServer } from './serverActions';
 
 /**

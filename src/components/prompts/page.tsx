@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getPrompts, deletePrompt, Prompt } from "../../utils/promptStorage";
+import { getPrompts, deletePrompt, Prompt } from "../../app/lib/storage/promptStorage";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import PromptControls from "@/components/PromptControls";

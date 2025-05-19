@@ -2,7 +2,7 @@
 
 import { useState, useEffect, use } from "react";
 import { useRouter } from "next/navigation";
-import { getPrompts, updatePrompt, Prompt } from "../../../../utils/promptStorage";
+import { getPrompts, updatePrompt, Prompt } from "../../../../app/lib/storage/promptStorage";
 import Link from "next/link";
 
 

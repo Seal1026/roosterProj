@@ -1,5 +1,5 @@
 import { processPrompt, processScheduledPrompts } from '../schedulerService';
-import { getPrompts, updatePromptLastProcessed } from '../promptStorage';
+import { getPrompts, updatePromptLastProcessed } from '../../storage/promptStorage';
 import { sendToChatGPT } from '../openaiService';
 import { sendEmail } from '../emailService';
 

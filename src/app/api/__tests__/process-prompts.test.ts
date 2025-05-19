@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import { GET, POST } from '../process-prompts/route';
-import { processScheduledPrompts } from '../../../utils/schedulerService';
+import { processScheduledPrompts } from '../../lib/services/schedulerService';
 
 // Mock the dependencies
 jest.mock('../../../utils/schedulerService');

@@ -1,6 +1,6 @@
 "use server";
-import { Prompt, getPrompts } from '@/utils/promptStorage';
-import { processPromptsOnServer } from '@/utils/serverActions';
+import { Prompt, getPrompts } from '@/app/lib/storage/promptStorage';
+import { processPromptsOnServer } from '@/app/lib/services/serverActions';
 import cron, { ScheduledTask } from 'node-cron';
 
 // TODO refactor

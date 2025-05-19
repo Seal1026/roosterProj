@@ -4,8 +4,8 @@
 
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import PromptsPage from '../prompts/page';
-import { getPrompts, deletePrompt, Prompt } from '../../utils/promptStorage';
+import PromptsPage from '../../components/prompts/page';
+import { getPrompts, deletePrompt, Prompt } from '../lib/storage/promptStorage';
 
 // Mock the router
 jest.mock('next/navigation', () => ({

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { processScheduledPrompts } from '@/utils/schedulerService';
+import { processScheduledPrompts } from '@/app/lib/services/schedulerService';
 
 interface ProcessAllPromptsButtonProps {
   className?: string;

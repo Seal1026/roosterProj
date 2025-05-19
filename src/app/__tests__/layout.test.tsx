@@ -15,21 +15,18 @@ describe('Root Layout', () => {
     );
     
     // Check if navigation links are rendered correctly
-    const dashboardLink = screen.getByText('Dashboard');
+    const homeLink = screen.getByText('Home');
     const promptsLink = screen.getByText('Prompts');
-    const reportsLink = screen.getByText('Reports');
     
-    expect(dashboardLink).toBeInTheDocument();
+    expect(homeLink).toBeInTheDocument();
     expect(promptsLink).toBeInTheDocument();
-    expect(reportsLink).toBeInTheDocument();
     
     // Check if links have correct href attributes
-    expect(dashboardLink.closest('a')).toHaveAttribute('href', '/');
+    expect(homeLink.closest('a')).toHaveAttribute('href', '/');
     expect(promptsLink.closest('a')).toHaveAttribute('href', '/prompts');
-    expect(reportsLink.closest('a')).toHaveAttribute('href', '/reports');
     
-    // Verify that Logs link is not present
-    expect(screen.queryByText('Logs')).not.toBeInTheDocument();
+    // Verify that Reports link is not present (removed during cleanup)
+    expect(screen.queryByText('Reports')).not.toBeInTheDocument();
   });
 
   it('renders the children content', () => {
